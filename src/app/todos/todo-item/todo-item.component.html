@@ -1,0 +1,11 @@
+<div class="todo-item">
+  <button class="checkbox icon" (click)="onShow()">
+      <i class="material-icons">{{ 'remove_red_eye' }}</i>
+  </button>
+  <span class="title">{{ location.state +" - " + location.city}}</span>
+  <div class="actions">
+    <button class="delete icon" (click)="onDelete(todo)">
+                <i class="material-icons">delete</i>
+        </button>
+  </div>
+</div>

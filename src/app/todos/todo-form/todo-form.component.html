@@ -1,0 +1,13 @@
+<h2>Get up-to-date weather information for any location </h2>
+<div class="col-md-8">
+  <button type="button" class="btn btn-info" (click)="onGetUserLocation()" style="margin:10px 0;">Get weather in my location!</button>
+  <div class="form-group">
+    <form class="todo-form" (ngSubmit)="onSubmit(); todoForm.reset()" #todoForm="ngForm">
+      <input type="text" name="city" [(ngModel)]="id_city" class="form-control" required placeholder="Enter City name ..."><br>
+      <input type="text" name="state" [(ngModel)]="id_state" class="form-control" required placeholder="Enter State. Example CA for California ..."><br>
+      <button type="submit" class="btn btn-primary" [disabled]="todoForm.form.invalid" >Submit</button>
+    </form>
+    <br><br><br>
+    <br>
+  </div>
+</div>

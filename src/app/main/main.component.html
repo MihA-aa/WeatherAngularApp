@@ -1,0 +1,3 @@
+<todo-form (create)="create($event)" (getUserLocation)="getUserLocation($event)"></todo-form> 
+<todo-information calss="todo-information" style="margin-left: -100px; margin-top: -60px;"[locationInformation]="locationInformation"></todo-information>
+<todo-list [locations]="locations" (delete)="delete($event)" (show)="show($event)"></todo-list>

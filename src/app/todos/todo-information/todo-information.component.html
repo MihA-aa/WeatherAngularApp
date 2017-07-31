@@ -1,0 +1,12 @@
+<div class="col-md-12" >
+  <div class="form-group">
+    <p class="well lead" *ngIf="this.locationInformation">
+      <i>City, State, Country :</i> {{ this.locationInformation.city }} {{ this.locationInformation.state }} {{ this.locationInformation.country
+      }} <br>
+      <i>Current Condition :</i> {{ this.locationInformation.text }} <br>
+      <i>Current Temperature :</i> {{ this.locationInformation.temp }} 
+      <span *ngIf="this.locationInformation.temp"> °C</span>      
+      <br>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<div class = "todo-list" *ngIf="locations.length">
+    <todo-item *ngFor="let location of locations" [location]="location" (delete)="onDelete($event)"
+    (show)="onShow($event)"></todo-item>
+</div>
